@@ -1,0 +1,239 @@
+{
+	"menus": [{
+		"id": 0,
+		"name": "Classique 33cl",
+		"description": "sandwich ou tartine au choix + boisson 33cl + dessert au choix",
+		"content": ["sandwich",
+		"boisson33",
+		"dessert"],
+		"price": 7.10
+	},
+	{
+		"id": 1,
+		"name": "Classique 50cl",
+		"description": "sandwich ou tartine au choix + boisson 50cl + dessert au choix",
+		"content": ["sandwich",
+		"boisson50",
+		"dessert"],
+		"price": 7.80
+	},
+	{
+		"id": 2,
+		"name": "L'express 33cl",
+		"description": "sandwich ou tartine au choix + boisson 33cl",
+		"content": ["sandwich",
+		"boisson33"],
+		"price": 5.40
+	},
+	{
+		"id": 3,
+		"name": "L'express 50cl",
+		"description": "sandwich ou tartine au choix + boisson 50cl",
+		"content": ["sandwich",
+		"boisson50"],
+		"price": 6.30
+	}],
+	"sandwichs": [{
+		"name": "Le Parisien",
+		"content": ["pain Augustine", "beurre", "jambon", "emmental", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Complet Poulet",
+		"content": ["pain Augustine", "poulet", "mayonnaise", "oeuf", "tomate", "emmental", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Complet jambon",
+		"content": ["pain Augustine", "jambon", "mayonnaise", "oeuf", "tomate", "emmental", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Complet Thon",
+		"content": ["pain Augustine", "thon", "mayonnaise", "oeuf", "tomate", "concombre", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Nordique",
+		"content": ["pain germanique", "crème biche", "ciboulette", "citron", "saumon fumé", "tomate", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Méditerranéen",
+		"content": ["pain pavot", "beurre", "coppa", "féta", "filet de vinaigrette balsamique", "tomate", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Fermier",
+		"content": ["pain aux figues", "beurre", "bric", "poitrine fumée", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Grecque",
+		"content": ["pain aux olives vertes", "tzatAki", "poulet", "tomate", "salade"],
+		"price": 4
+	},
+	{
+		"name": "L'Andalou",
+		"content": ["pain aux graines toastées", "poulet andalou", "tomate", "mozzarella", "salade"],
+		"price": 4
+	},
+	{
+		"name": "L'Indien",
+		"content": ["pain de mie sésame", "poulet curry", "raisin sec", "tomate", "chèvre", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Toscan",
+		"content": ["pain de mie", "thon toscane", "tomate confite", "mozzarella", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Malien",
+		"content": ["pain ciahatta", "beurre", "jambon de pays", "gorgonzola", "pomme fruit", "salade", "noix"],
+		"price": 4
+	},
+	{
+		"name": "Elbérique",
+		"content": ["pain aux olives noires", "tartare de tomate", "chotiz.p", "parmesan", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Tomate-Monza",
+		"content": ["pain au chorizo", "tartinabic roquette speck", "tomate", "mozzarella", "pesta de roquette"],
+		"price": 4
+	},
+	{
+		"name": "L'Estival",
+		"content": ["baguette Tantine", "fromage de chèvre frais Petit BilIy", "jambon de pays", "carotte grillée et marinée", "tartare de tomate", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Breizh",
+		"content": ["pain Breton", "fromage de chèvre frais Petit kassler de porc fumé", "moutarde à l'ancienne", "artichaut mariné", "mâche"],
+		"price": 4
+	},
+	{
+		"name": "Le Burger d'Augustin",
+		"content": ["Pain de mie", "moutarde â l'ancienne-mayonnaise", "oignon rouge", "tomate", "lustra-mi", "cheddar", "roquette", "cornichon", "sauce barbecue"],
+		"price": 4
+	},
+	{
+		"name": "L'Écossais",
+		"content": ["pain de mie", "Fromage Fouetté Madame lxiik nature au sel de Guérande", "jus de citron", "aneth", "saumon fumé", "concombre", "salade"],
+		"price": 4
+	},
+	{
+		"name": "Le Cocktail",
+		"content": ["pain Augustin", "cocktail de 'crevettes rosés", "avocat", "ananas vanillé au thym", "oeuf", "mâche"],
+		"price": 4
+	}],
+	"desserts": [{
+		"name": "eclair au chocolat",
+		"price": 2.30
+	},
+	{
+		"name": "Tartelette citron",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette cassis mascarpone",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette cappucino",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette exotique",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette cheese fraise",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette framboise",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette mirtille",
+		"price": 2.50
+	},
+	{
+		"name": "Tartelette abricot nougat",
+		"price": 2.50
+	},
+	{
+		"name": "Dessert du jour",
+		"price": 2.50
+	},
+	{
+		"name": "Flan",
+		"price": 2.30
+	}],
+	"boissons": [{
+		"boisson33": [{
+			"name": "Eau plate",
+			"content": "50cl",
+			"price": 1.60
+		},
+		{
+			"name": "Eau gazeuze",
+			"content": "50cl",
+			"price": 1.60
+		},
+		{
+			"name": "coca",
+			"content": "33cl",
+			"price": 1.60
+		},
+		{
+			"name": "coca light",
+			"content": "33cl",
+			"price": 1.60
+		},
+		{
+			"name": "coca zero",
+			"content": "33cl",
+			"price": 1.60
+		},
+		{
+			"name": "fanta",
+			"content": "33cl",
+			"price": 1.60
+		}]
+	},
+	{
+		"boisson50": [{
+			"name": "Eau plate",
+			"content": "50cl",
+			"price": 1.60
+		},
+		{
+			"name": "Eau gazeuze",
+			"content": "50cl",
+			"price": 1.60
+		},
+		{
+			"name": "coca",
+			"content": "50cl",
+			"price": 2.7
+		},
+		{
+			"name": "coca light",
+			"content": "50cl",
+			"price": 2.7
+		},
+		{
+			"name": "coca zero",
+			"content": "50cl",
+			"price": 2.7
+		},
+		{
+			"name": "fanta",
+			"content": "50cl",
+			"price": 2.7
+		}]
+	}]
+}
