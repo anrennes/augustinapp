@@ -1,39 +1,39 @@
 import Vue from 'vue';
-import Router from 'vue-router';
-import { domain, fromNow } from './filters';
-import App from './components/App.vue';
-import NewsView from './components/NewsView.vue';
-import ItemView from './components/ItemView.vue';
-import UserView from './components/UserView.vue';
+import VueResource from 'vue-resource';
+import VueRouter from 'vue-router';
+import Navigation from 'components/Navigation/navigation';
+import Loader from 'components/Loader/Loader';
 
-// install router
-Vue.use(Router);
+Vue.use(VueRouter);
+Vue.use(VueResource);
 
-// register filters globally
-Vue.filter('fromNow', fromNow);
-Vue.filter('domain', domain);
+import routes from 'src/routes';
+import 'src/style.scss';
 
-// routing
-var router = new Router();
+export const LoadingState = new Vue();
 
-router.map({
-  '/news/:page': {
-    component: NewsView
+export const router = new VueRouter({
+  routes,
+  mode: 'history',
+  linkActiveClass: 'active'
+});
+
+export const App = new Vue({
+  router,
+  components: {
+    Navigation,
+    Loader
   },
-  '/user/:id': {
-    component: UserView
+
+  data(){
+    return {
+      isLoading: false
+    };
   },
-  '/item/:id': {
-    component: ItemView
+
+  created(){
+    LoadingState.$on('toggle', (isLoading) => {
+      this.isLoading = isLoading;
+    });
   }
-});
-
-router.beforeEach(function () {
-  window.scrollTo(0, 0);
-});
-
-router.redirect({
-  '*': '/news/1'
-});
-
-router.start(App, '#app');
+}).$mount('#app');

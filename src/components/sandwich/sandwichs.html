@@ -1,0 +1,12 @@
+<div>
+
+  <h1 class="mb-2"><i class="fa fa-file-text-o"></i> Sandwichs</h1>
+
+  <div class="list-group">
+    <router-link class="list-group-item"
+                 v-for="(sandwich, index) in sandwichs"
+                 :to="{ name: 'sandwich', params: { id: sandwich.id }}">
+      <i class="fa fa-hashtag"></i> {{ index+1 }} | {{ sandwich.name }} ( <span v-for="(content, index) in sandwich.content">{{index>0 ? ", " : ""}} {{ content }}</span> )
+    </router-link>
+  </div>
+</div>
