@@ -9,7 +9,9 @@ export default Vue.extend({
 
   data() {
     return {
-      sandwichs: []
+      sandwichs: [],
+      filteredSandwichs: [],
+      searchQuery: ''
     };
   },
 
@@ -29,6 +31,21 @@ export default Vue.extend({
         LoadingState.$emit('toggle', false);
       });
     }
-  }
+  },
 
+  computed: {
+    filteredSandwichs: function() {
+      var self = this;
+
+      if (self.searchQuery === '') {
+        return self.sandwichs;
+      }
+
+      return self.sandwichs.filter(function(sandwich) {
+        return self.searchQuery.split(' ').every(function(ingredient) {
+          return sandwich.content.indexOf(ingredient) !== -1;
+        });
+      });
+    }
+  }
 });
